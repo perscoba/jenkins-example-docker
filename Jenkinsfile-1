@@ -8,6 +8,7 @@ pipeline {
     stage('Test') {
       steps {
         sh 'sonar-scanner --version'
+        sh ' cat  /opt/sonar-scanner/conf/sonar-scanner.properties'
       }
     }
 
