@@ -1,0 +1,16 @@
+pipeline{
+
+agent any
+  stages {
+   stage ( 'trypeter') {
+     steps {
+      sh '''
+        mkdir peter
+        cd peter 
+        touch file1 
+       '''
+     }
+}
+ 
+  }
+}
